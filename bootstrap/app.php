@@ -77,6 +77,10 @@ class_alias('Artisaninweb\SoapWrapper\Facade', 'SoapWrapper');
 |
 */
 
+$app->middleware([
+    App\Http\Middleware\AuthenticateAccess::class
+]);
+
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);

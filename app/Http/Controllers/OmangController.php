@@ -14,17 +14,7 @@ class OmangController extends Controller
      */
     public function validateOmang(Request $request, $omang)
     {
-        if(Omang::where('ID_NO',$omang)->exists())
-        {
-            return response()->json([
-                'status' => 'success',
-                'data' => Omang::where('ID_NO',$omang)->first(),
-            ]);
-        }
-        return response()->json([
-            'status' => 'error',
-            'data' => null,
-        ]);
+
     }
 
     public function verifyOmang(Request $request, $omang)

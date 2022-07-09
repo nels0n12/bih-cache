@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 });
 
 
-$router->get('/omang/{omang}', "OmangController@validateOmang");
+//$router->get('/omang/{omang}', "OmangController@validateOmang");
 
 
 $router->get('/validate/{omang}', "OmangController@validateOmang");

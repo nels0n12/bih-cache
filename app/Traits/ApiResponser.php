@@ -64,7 +64,7 @@ trait ApiResponser
      * @param int $code
      * @return JsonResponse
      */
-    public function errorResponse($message, int $code): JsonResponse
+    public function errorResponse($message, int $code = Response::HTTP_INTERNAL_SERVER_ERROR): JsonResponse
     {
         $type = gettype($message);
 

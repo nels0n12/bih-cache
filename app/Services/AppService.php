@@ -21,13 +21,13 @@ class AppService
 //     * The secret to consume the authors service
 //     * @var string
 //     */
-//    public $secret;
+    public $secret;
 //    public $salt_connection;
 
     public function __construct()
     {
-        $this->baseUri = config('services.cache.base_uri');
-//        $this->secret = config('services.cache.secret');
+        $this->baseUri = config('services.omang.base_uri');
+        $this->secret = config('services.omang.secret');
 //        $this->salt_connection = config('services.cache.salt_connection');
     }
 

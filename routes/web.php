@@ -21,8 +21,8 @@ $router->get('/', function () use ($router) {
 //$router->get('/omang/{omang}', "OmangController@validateOmang");
 
 
-$router->get('/validate/{omang}', "OmangController@validateOmang");
-$router->get('/verify/{omang}', "OmangController@verifyOmang");
+$router->get('/validate/{idno}', "OmangController@validateOmang");
+$router->get('/verify/{idno}', "OmangController@verifyOmang");
 
 
 $router->get('/cipa/companies/{uin}', "CIPAController@company");

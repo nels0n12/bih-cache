@@ -35,9 +35,10 @@ class AppService
      * Obtain the full list of author from the author service
      * @return string
      */
-    public function validate($omang)
+    public function validate($idno)
     {
-        return $this->performRequest('GET', "/validate/$omang");
+        // return $this->performRequest('GET', "/validate/$idno");
+        return $this->performRequest('GET', "validate/$idno");
     }
 
     /**
